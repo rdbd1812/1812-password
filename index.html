@@ -21,8 +21,15 @@ function checkPassword() {
   // Vérifie si le mot de passe est correct
   if (password === "17yo") {
     // Redirige vers une image si le mot de passe est correct
-    window.location.href = "https://rdbd1812.github.io/1812-consequences/consequences.jpg";
+    window.location.href = "https://www.youtube.com/watch?v=MgiOvJTlocM";
     return false; // Empêche le formulaire de se soumettre normalement
+  } else if (password === "1712") {
+    // Affiche une vidéo YouTube si le mot de passe est "1712"
+    var videoContainer = document.createElement('div');
+    videoContainer.innerHTML = '<iframe width="560" height="315" src="https://www.youtube.com/watch?v=wsVfMBJOaaY&t=11s" frameborder="0" allowfullscreen></iframe>';
+    document.body.appendChild(videoContainer);
+    return false; // Empêche le formulaire de se soumettre normalement
+    ils ont tué cet enfant
   } else {
     alert("Mot de passe incorrect. Veuillez réessayer.");
     return false; // Empêche le formulaire de se soumettre normalement
@@ -32,4 +39,5 @@ function checkPassword() {
 
 </body>
 </html>
+
 si vous avez réussi a arriver jusqu'ici, c'est a dire que vous avez trouvé l'extension du cour metrage,bonne chance

@@ -24,15 +24,8 @@ function checkPassword() {
     window.location.href = "https://www.youtube.com/watch?v=MgiOvJTlocM";
     return false; // Empêche le formulaire de se soumettre normalement
   } else if (password === "1718") {
-    // Affiche la deuxième vidéo YouTube et le texte codé si le mot de passe est "1718"
-    var videoContainer = document.createElement('div');
-    videoContainer.innerHTML = '<video width="560" height="315" controls>' +
-                               '<source src="https://youtu.be/wsVfMBJOaaY?si=JOtQC4cOo7cOZaO3" type="video/mp4">' +
-                               'Votre navigateur ne supporte pas la lecture de vidéos en HTML5.' +
-                               '</video>';
-    document.body.appendChild(videoContainer);
     var text = document.createElement('p');
-    text.textContent = "-.-. .----. . ... - / -.-. . - / . -. ..-. .- -. - / --.- ..- .----. .. .-.. ... / --- -. - / - ..- ..-..";
+    text.textContent = "-.-. .----. . ... - / -.-. . - / . -. ..-. .- -. - / --.- ..- .----. .. .-.. ... / --- -. - / - ..- ..-.. / ---... / .... - - .--. ... ---... -..-. -..-. .-- .-- .-- .-.-.- -.-- --- ..- - ..- -... . .-.-.- -.-. --- -- -..-. .-- .- - -.-. .... ..--.. ...- -...- .-- ... ...- ..-. -- -... .--- --- .- .- -.-- .-... - -...- .---- ...";
     document.body.appendChild(text);
     return false; // Empêche le formulaire de se soumettre normalement
   } else {

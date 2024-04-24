@@ -27,24 +27,9 @@ function checkPassword() {
     var text = document.createElement('p');
     text.textContent = ".. .-.. ... / -. . / ... .- ...- . -. - / .--. .- ... / -.-. . / --.- ..- . / .--- .----. .- .. / -.. ..- / . -. -.. ..- .-. . .-. --..-- / -.-. . ... / -- . .-. -.. . ... / ---... / -.. .-. --- .. -";
     document.body.appendChild(text);
-    var choix = document.createElement('p');
-    choix.textContent = "Que préférez-vous voir ? Choisissez entre 'Le déchaînement' et 'La fin'.";
-    document.body.appendChild(choix);
-    var btnDechainement = document.createElement('button');
-    btnDechainement.textContent = "Le déchaînement";
-    btnDechainement.onclick = function() {
-      window.location.href = "https://www.youtube.com/watch?v=VIDEO_ID_DECHAINEMENT";
-    };
-    document.body.appendChild(btnDechainement);
-    var btnFin = document.createElement('button');
-    btnFin.textContent = "La fin";
-    btnFin.onclick = function() {
-      window.location.href = "https://www.youtube.com/watch?v=VIDEO_ID_FIN";
-    };
-    document.body.appendChild(btnFin);
     return false; // Empêche le formulaire de se soumettre normalement
-  } else if (password === "surfer") {
-    // Redirige vers une vidéo YouTube si le mot de passe est "surfer"
+  } else if (password === "surfii") {
+    // Redirige vers une vidéo YouTube si le mot de passe est "surfii"
     window.location.href = "https://www.youtube.com/watch?v=9wq2cJS-43o";
     return false; // Empêche le formulaire de se soumettre normalement
   } else if (password === "redbed") {
@@ -71,8 +56,12 @@ function checkPassword() {
     // Redirige vers une vidéo YouTube si le mot de passe est "DROIT"
     window.location.href = "https://www.youtube.com/shorts/102KhA_gGC8";
     return false; // Empêche le formulaire de se soumettre normalement
+  } else if (password === "le viol est un meurtre.") {
+    // Redirige vers une vidéo YouTube si le mot de passe est "le viol est un meurtre."
+    window.location.href = "https://www.youtube.com/watch?v=VIDEO_ID_VIOL_MEURTRE";
+    return false; // Empêche le formulaire de se soumettre normalement
   } else {
-    alert("Mot de passe incorrect. Veuillez réessayer.");
+    alert("prend ton temps, analyse.");
     return false; // Empêche le formulaire de se soumettre normalement
   }
 }
@@ -80,7 +69,6 @@ function checkPassword() {
 
 </body>
 </html>
-
 
 
 
